@@ -38,11 +38,8 @@ H2_2D_Tree::H2_2D_Tree(const unsigned short nChebNodes, double* const charge, co
     root->radius        =   radius;
     
 	root->index.setLinSpaced(N,0,N-1);
-    std::cout << "Assigning children..." << std::endl;
 	assign_Children(root);
-	std::cout << "Assigned children." << std::endl;
     build_Tree(root);
-    std::cout << "Maximum levels is: " << this->maxLevels << std::endl;
 }
 
 //	Assigns children;
